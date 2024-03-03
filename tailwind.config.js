@@ -1,0 +1,40 @@
+module.exports = {
+  mode: "jit",
+  content: ["./src/**/**/*.{js,ts,jsx,tsx,html,mdx}", "./src/**/*.{js,ts,jsx,tsx,html,mdx}"],
+  darkMode: "class",
+  theme: {
+    screens: { md: { max: "1050px" }, sm: { max: "550px" } },
+    extend: {
+      colors: {
+        black: { 900: "#000000", "900_33": "#00000033" },
+        white: { A700: "#ffffff", A700_66: "#ffffff66" },
+        lime: { 800: "#b38b4d", "800_a2": "#b38b4da2" },
+        gray: {
+          200: "#e9eaed",
+          500: "#999999",
+          600: "#777777",
+          700: "#555555",
+          "700_01": "#58595b",
+          "700_90": "#58595b90",
+        },
+        green: { 500: "#51b25c" },
+        light_green: { 50: "#f6f2ec" },
+        blue_gray: { 100: "#d7d7d7", 600: "#307093", "100_01": "#d9d9d9" },
+        deep_orange: { A200: "#ed7137" },
+      },
+      boxShadow: { xs: "0px 0px  1px 0px #b38b4d", sm: "0px 4px  4px 0px #0000003f" },
+      fontFamily: { neosanspro: "Neo Sans Pro", neosansstd: "Neo Sans Std", lexend: "Lexend" },
+      backgroundImage: {
+        gradient: "linear-gradient(to right #000000,#00000019)",
+        gradient1: "linear-gradient(to right #000000,#00000000)",
+        gradient2: "linear-gradient(180deg, #00000054,#000000)",
+        gradient3: "linear-gradient(1deg, #000000,#00000054)",
+        gradient4: "linear-gradient(180deg, #000000,#d9d9d900)",
+        gradient5: "linear-gradient(to right #ffffff,#d9d9d900)",
+        gradient6: "linear-gradient(134deg, #00000019,#00000000)",
+      },
+      opacity: { 0.8: 0.8, 0.6: 0.6 },
+    },
+  },
+  plugins: [require("@tailwindcss/forms")],
+};
